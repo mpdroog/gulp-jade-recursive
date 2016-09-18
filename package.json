@@ -1,0 +1,27 @@
+{
+  "name": "gulp-jade-recursive",
+  "version": "1.0.0",
+  "description": "Incremental builds with Jade",
+  "license": "MIT",
+  "repository": "mpdroog/gulp-jade-recursive",
+  "author": {
+    "name": "MP Droog",
+    "email": "rootdev@gmail.com",
+    "url": "rootdev.nl"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "filter"
+  ],
+  "dependencies": {
+    "glob": "glob",
+    "through2",
+    "vinyl"
+  }
+}
