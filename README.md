@@ -32,14 +32,14 @@ function tpl(lang, tube) {
     };
   }))
   .pipe(jade())
-  .pipe(gulp.dest('/build/'+lang+"/"));
+  .pipe(gulp.dest('build/'+lang+"/"));
 }
 
 gulp.task('default', [], function() {
   // Watch all Jade-files for changes
   return watch('src/static/**/*.jade')
   // Let this plugin maintain a map and return all affected files
-  .pipe(recursive(''))
+  .pipe(recursive('src/static/**/*.jade'))
   // Only build the pages
   .pipe(filter('src/static/pages/**/*.jade'))
   // We want NL(Dutch) and EN(English) so use foreach to trigger both
