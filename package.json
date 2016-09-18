@@ -20,8 +20,8 @@
     "filter"
   ],
   "dependencies": {
-    "glob": "glob",
-    "through2",
-    "vinyl"
+    "glob": "*",
+    "through2": "*",
+    "vinyl": "*"
   }
 }
